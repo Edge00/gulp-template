@@ -1,0 +1,24 @@
+
+$base-font: #ccc;
+
+@mixin single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  *zoom: 1;
+}
